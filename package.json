@@ -1,13 +1,13 @@
 {
-  "name": "ss-stylus",
-  "author": "Owen Barnes <owen@socketstream.com>",
-  "maintainer": "Paul Jensen <paul@socketstream.com>",
-  "description": "Stylus (CSS) wrapper for SocketStream 0.3",
-  "version": "0.1.8",
+  "name": "ss-scss",
+  "author": "Stephen Austin <saustin@arhaus.com>",
+  "maintainer": "Stephen Austin <saustin@arhaus.com>",
+  "description": "SCSS (CSS) wrapper for SocketStream 0.3",
+  "version": "0.1.1",
   "main": "./wrapper.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/socketstream/ss-stylus"
+    "url": "https://github.com/austinsc/ss-scss"
   },
   "contributors": [
     "Robert Hall (americanYak on Github)",
@@ -19,8 +19,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "stylus": "0.41.3",
-    "nib": "1.0.1"
+    "node-sass": "^0.9.3"
   },
   "devDependencies": {}
 }

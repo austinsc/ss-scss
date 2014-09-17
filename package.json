@@ -3,7 +3,7 @@
   "author": "Stephen Austin <saustin@arhaus.com>",
   "maintainer": "Stephen Austin <saustin@arhaus.com>",
   "description": "SCSS (CSS) wrapper for SocketStream 0.3",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./wrapper.js",
   "repository": {
     "type": "git",

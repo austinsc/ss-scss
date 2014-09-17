@@ -14,20 +14,14 @@ exports.init = function(root, config) {
       var dir = path.split('/'); dir.pop();
       var input = fs.readFileSync(path, 'utf8');
       var compress = options && options.compress;
-
-      var sss = stylus(input, {filename: path, paths: [dir.join('/')]});
-      for (var c in config) {
-        sss.set(c, config[c]);
-      }
-
-      sss.use(nib())
-        .render(function(err, css) {
-        if (err) {
-          var message = '! - Unable to compile Stylus file %s into CSS';
-          console.log(String.prototype.hasOwnProperty('red') && message.red || message, path);
+      
+      sass.render({
+        file: path,
+        success: cb,
+        error: function(err) {
           console.error(err);
-        }
-        cb(css);
+        },
+        outputStyle: compress ? 'compressed' : 'nested'
       });
     }
   };
